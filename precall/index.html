@@ -615,29 +615,9 @@
                     <section ref={el => sectionsRef.current[9] = el} style={{ minHeight: '100vh', backgroundColor: colors.bgAlt, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden' }}>
                         <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '800px', height: '800px', background: `radial-gradient(circle, ${colors.accent}10 0%, transparent 70%)`, borderRadius: '50%', filter: 'blur(100px)' }} />
                         <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '6rem 2rem', textAlign: 'center', position: 'relative', zIndex: 1 }}>
-                            
-                            {/* Top Metrics Summary */}
-                            <div data-fade-id="precall-metrics" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '32px', maxWidth: '1000px', margin: '0 auto 80px', opacity: visibleElements.has('precall-metrics') ? 1 : 0, transform: visibleElements.has('precall-metrics') ? 'translateY(0)' : 'translateY(30px)', transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)' }}>
-                                <div>
-                                    <div style={{ fontSize: '48px', fontWeight: 200, color: colors.secondary, marginBottom: '8px', lineHeight: 1.2 }}>276K+<br/>966K+</div>
-                                    <div style={{ fontSize: '14px', color: colors.textMuted, textTransform: 'uppercase', letterSpacing: '0.1em', lineHeight: 1.4 }}>Program Tickets<br/><span style={{ fontSize: '11px', color: colors.secondary, fontWeight: 500 }}>FY23/24 / FY24/25</span></div>
-                                </div>
-                                <div>
-                                    <div style={{ fontSize: '64px', fontWeight: 200, color: colors.accent, marginBottom: '8px' }}>6.55%</div>
-                                    <div style={{ fontSize: '14px', color: colors.textMuted, textTransform: 'uppercase', letterSpacing: '0.1em', lineHeight: 1.4 }}>Campaign CTR<br/><span style={{ fontSize: '11px', color: colors.accent, fontWeight: 500 }}>Cohort Contributed</span></div>
-                                </div>
-                                <div>
-                                    <div style={{ fontSize: '64px', fontWeight: 200, color: colors.secondary, marginBottom: '8px' }}>2M+</div>
-                                    <div style={{ fontSize: '14px', color: colors.textMuted, textTransform: 'uppercase', letterSpacing: '0.1em', lineHeight: 1.4 }}>Creator Impressions<br/><span style={{ fontSize: '11px', color: colors.secondary, fontWeight: 500 }}>On TikTok</span></div>
-                                </div>
-                                <div>
-                                    <div style={{ fontSize: '64px', fontWeight: 200, color: colors.accent, marginBottom: '8px' }}>100%</div>
-                                    <div style={{ fontSize: '14px', color: colors.textMuted, textTransform: 'uppercase', letterSpacing: '0.1em' }}>On-Time Delivery</div>
-                                </div>
-                            </div>
 
                             {/* Main CTA Box */}
-                            <div data-fade-id="precall-cta" style={{ background: `linear-gradient(135deg, ${colors.bgCard}, ${colors.accent}08)`, padding: '64px 48px', borderRadius: '24px', border: `1px solid ${colors.accent}30`, maxWidth: '800px', margin: '0 auto', opacity: visibleElements.has('precall-cta') ? 1 : 0, transform: visibleElements.has('precall-cta') ? 'translateY(0)' : 'translateY(30px)', transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s', position: 'relative', overflow: 'hidden' }}>
+                            <div data-fade-id="precall-cta" style={{ background: `linear-gradient(135deg, ${colors.bgCard}, ${colors.accent}08)`, padding: '64px 48px', borderRadius: '24px', border: `1px solid ${colors.accent}30`, maxWidth: '800px', margin: '0 auto', opacity: visibleElements.has('precall-cta') ? 1 : 0, transform: visibleElements.has('precall-cta') ? 'translateY(0)' : 'translateY(30px)', transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)', position: 'relative', overflow: 'hidden' }}>
                                 <div style={{ position: 'absolute', top: '-50%', right: '-20%', width: '400px', height: '400px', background: `radial-gradient(circle, ${colors.secondary}15 0%, transparent 70%)`, borderRadius: '50%', filter: 'blur(60px)', pointerEvents: 'none' }} />
                                 <div style={{ position: 'relative', zIndex: 1 }}>
                                     <h3 style={{ fontSize: '32px', fontWeight: 300, marginBottom: '20px' }}>See You Soon</h3>
